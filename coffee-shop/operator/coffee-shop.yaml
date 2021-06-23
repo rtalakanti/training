@@ -6,7 +6,7 @@ spec:
   type: RemoteSource
   gitSource:
     contextDir: coffee-shop
-    uri: 'git@bitbucket.org:leonardo-consulting/kogito-pot.git'
+    uri: 'https://github.com/rtalakanti/training'
 ---
 apiVersion: app.kiegroup.org/v1beta1
 kind: KogitoRuntime
