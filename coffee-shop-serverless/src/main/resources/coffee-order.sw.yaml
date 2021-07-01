@@ -1,0 +1,17 @@
+name: Coffee Order Workflow
+id: coffeeorder
+version: "1.0"
+description: Workflow for processing Coffee Orders
+start: PlaceOrder
+events:
+  - kind: consumed
+    name: CoffeeOrderEvent
+    type: coffeeOrderEvent
+    source: coffeeOrderEvent
+states:
+  - name: PlaceOrder
+    type: event
+    onEvents:
+      - eventRefs:
+          - "CoffeeOrderEvent"
+    end: true
